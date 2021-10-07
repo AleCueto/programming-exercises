@@ -5,7 +5,7 @@
  */
 public class Tema01Ejercicio02AleCueto {
   public static void main(String[] args) {
-    System.out.printf("Alejandro Cueto Jimenez \n%-9d \nC/Águila Nº14\n", 684152927);
+    System.out.printf("Alejandro Cueto Jimenez \n%-9d \nC/Periquito Nº10\n", 684152927);
   }
 }
 
