@@ -1,5 +1,5 @@
 /**
- * Saca mi nombre por pantalla
+ * Saca un dibujo coloreado por pantalla
  *
  * @author Ale Cueto
  */
