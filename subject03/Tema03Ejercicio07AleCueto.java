@@ -1,5 +1,5 @@
 /**
- * Calcula el área de un triángulo
+ * Calcular factura dada la base imponible
  *
  * @author Ale Cueto
  */
