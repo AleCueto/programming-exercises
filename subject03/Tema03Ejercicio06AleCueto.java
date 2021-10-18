@@ -3,7 +3,7 @@
  *
  * @author Ale Cueto
  */
-public class Tema03Ejercicio07AleCueto {
+public class Tema03Ejercicio06AleCueto {
   public static void main(String[] args) {
     
     System.out.println("¡Vamos a calcular el área de un triángulo!");

@@ -6,14 +6,12 @@
 public class Tema03Ejercicio07AleCueto {
   public static void main(String[] args) {
     
-    System.out.println("¡Vamos a calcular el área de un triángulo!");
-    System.out.println("Introduce cuánto mide la base en cm del triángulo:");
+    System.out.println("¡Vamos a calcular una factura dada la base imponible!");
+    System.out.println("Introduce cuánto es la base imponible en euros:");
     float base = Float.parseFloat(System.console().readLine());
-    System.out.println("Introduce cuánto mide la altura en cm del triángulo:");
-    float altura = Float.parseFloat(System.console().readLine());
     
     System.out.println("\n");
-    System.out.print("El área del triángulo dada la base de " + base + "cm y la altura de " + altura + "cm ");
-    System.out.print("es igual a " + ((base * altura)/2) + "cm²");
+    System.out.print("Dada una base imponible de " + base + "€, el total de la factura sería ");
+    System.out.printf("%.2f €", base * 1.21);
   }
 }
