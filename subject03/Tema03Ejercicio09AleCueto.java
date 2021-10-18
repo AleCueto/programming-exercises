@@ -19,6 +19,6 @@ public class Tema03Ejercicio09AleCueto {
     
     System.out.println("\n");
     System.out.printf("El volumen de un cono dada una altura de %.2f cm ", h);
-    System.out.printf("un radio de %.2f cm, es igual a %.2f cm²", r, v);
+    System.out.printf("un radio de %.2f cm, es igual a %.2f cm³", r, v);
   }
 }
