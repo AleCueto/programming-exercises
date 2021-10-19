@@ -1,24 +1,33 @@
 /**
- * Calcular nota necesaria para media
+ * Sacar la primera asignatura dependiendo el dia de la semana
  * 
- * Hay que tener en cuenta que la nota del primer examen es un 40% y la del segundo un 60%
  * 
  * @author Ale Cueto
  */
-public class Tema03Ejercicio12AleCueto {
+public class Tema04Ejercicio01AleCueto {
   public static void main(String[] args) {
+    System.out.println("¡Vamos a sacar la primera asignatura del dia!");
+    System.out.println("Dime cúal es el dia de la semana del que deseas sacar su primera asignatura");
+    System.out.println("Lunes = 1, Martes = 2, Miercoles = 3, Jueves = 4, Viernes = 5\n");
+    int dia = Integer.parseInt(System.console().readLine());
     
-    System.out.println("¡Vamos a calcular la nota que necesitas para sacar tu media deseada!");
-    
-    System.out.println("Introduce la media que deseas conseguir:");
-    float media = Float.parseFloat(System.console().readLine());
-    
-    System.out.println("Introduce la nota de tu primer exámen:");
-    float nota1 = Float.parseFloat(System.console().readLine());
-    
-    double nota2 = ((media * 100) - (nota1 * 40)) / 60;
-    System.out.println("\n");
-    System.out.printf("Si queremos una nota media de %.2f dada una primera nota %.2f ", media, nota1);
-    System.out.printf("será necesario sacar un total de %.2f en el segundo exámen", nota2);
+    switch(dia){
+      
+      case 1: System.out.println("La primera asignatura del dia es programación");
+      break;
+      
+      case 2: System.out.println("La primera asignatura del dia es programación");
+      break;
+      
+      case 3: System.out.println("La primera asignatura del dia es sistemas informáticos");
+      break;
+      
+      case 4: System.out.println("La primera asignatura del dia es programación");
+      break;
+      
+      case 5: System.out.println("La primera asignatura del dia es sistemas informáticos");
+      break;
+      
+      }
   }
 }
