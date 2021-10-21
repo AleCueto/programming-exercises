@@ -1,5 +1,5 @@
 /**
- * Calculamos el tiempo hasta media noche
+ * Cuestionario 1º DAM
  * 
  * 
  * @author Ale Cueto
