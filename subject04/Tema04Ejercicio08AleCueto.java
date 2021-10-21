@@ -1,7 +1,6 @@
 /**
  * Calcula media aritmética de tres notas y di si está aprobado, no o sobresaliente
  * 
- * Utilizaremos la formula √2h/g siendo g = 9.81
  * 
  * @author Ale Cueto
  */
