@@ -16,8 +16,11 @@ public class Tema04Ejercicio06AleCueto {
     
     double t = Math.sqrt(2 * h / g);
     
-      
+    if(h >= 0){
     System.out.printf("Si cae desde %f metros, siendo la gravedad de %f m/s², tardará un total de ", h, g);
     System.out.printf("%f segundos", t);
+    } else {
+    System.out.println("Has introducido mal la altura, asegúrate de que la cantidad es positiva.");
+    }
 }
 }
