@@ -17,11 +17,41 @@ public class Tema04Ejercicio09AleCueto {
     System.out.print("Por último, indícame cual es el valor de c: ");
     double c = Double.parseDouble(System.console().readLine());
     
-    double x1 = (-b + (Math.sqrt(b * b - 4 * a * c))/2*a);
+    double x1;
     
-    double x2 = (-b - (Math.sqrt(b * b - 4 * a * c))/2*a);
+    double x2;
 
-    System.out.printf("El resultado de la ecuación %.2fx² + %.2fx + %.2f es igual a", a, b, c);
-    System.out.printf("%.2f y a %.2f", x1, x2);
+    if ((a == 0) && (b == 0) && (c == 0)) {
+      System.out.println("Esta ecuación tendría infinitas soluciones.");
+    }
+    
+    
+    if ((a == 0) && (b == 0) && (c != 0)) {
+      System.out.println("Esta ecuación no tendría solución posible.");
+    }
+    
+    
+    if ((a != 0) && (b != 0) && (c == 0)) {
+      System.out.println("x1 = 0");
+      System.out.println("x2 = " + (-b / a));
+    }
+
+    if ((a == 0) && (b != 0) && (c != 0)) {
+      System.out.println("x1 = x2 = " + (-c / b));
+    }
+
+    if ((a != 0) && (b != 0) && (c != 0)) {
+        
+      double d = b*b - (4 * a * c);
+      
+      if (d < 0) {
+          System.out.println("La ecuación no tiene soluciones reales");
+      } else {
+        x1 = (-b + Math.sqrt(d))/(2 * a);
+        x2 = (-b - Math.sqrt(d))/(2 * a);
+        System.out.printf("El resultado de la ecuación %.2fx² + %.2fx + %.2f es igual a", a, b, c);
+        System.out.printf("%.2f y a %.2f", x1, x2);
+      }
+    }
 }
 }
