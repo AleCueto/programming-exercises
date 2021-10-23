@@ -16,7 +16,10 @@ public class Tema04Ejercicio05AleCueto {
     
     double x = -b/a;
     
-      
+    if(a != 0){
     System.out.printf("dada una a igual a %.3f y un b igual a %.3f, x será igual a %.3f", a, b, x);
+    } else{
+    System.out.println("Esta ecuación no tiene solución real, a no puede ser igual a 0");
+    }
 }
 }
