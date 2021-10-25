@@ -13,20 +13,18 @@ public class Tema04Ejercicio01AleCueto {
     
     switch(dia){
       
-      case 1: System.out.println("La primera asignatura del dia es programación");
+      case 1: 
+      case 2: 
+      case 4:
+        System.out.println("\nLa primera asignatura del dia es programación");
       break;
       
-      case 2: System.out.println("La primera asignatura del dia es programación");
+      case 3: 
+      case 5:
+        System.out.println("\nLa primera asignatura del dia es sistemas informáticos");
       break;
       
-      case 3: System.out.println("La primera asignatura del dia es sistemas informáticos");
-      break;
-      
-      case 4: System.out.println("La primera asignatura del dia es programación");
-      break;
-      
-      case 5: System.out.println("La primera asignatura del dia es sistemas informáticos");
-      break;
+      default: System.out.println("\nEl dato introducido no es correcto");
       
       }
   }
