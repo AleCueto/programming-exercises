@@ -6,10 +6,7 @@
  */
 public class Tema04Ejercicio14AleCueto {
   public static void main(String[] args) {
-    
-    double tercerNumero = 0;
-    double segundoNumero = 0;
-    double primerNumero = 0;
+
     
     System.out.println("¡Dame un número y te diré si es par o divisible entre 5!\n");
     
