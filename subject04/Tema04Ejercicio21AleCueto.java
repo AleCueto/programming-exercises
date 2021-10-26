@@ -13,19 +13,18 @@ public class Tema04Ejercicio21AleCueto {
     System.out.print("Introduce la segunda nota: ");
     double nota2 = Double.parseDouble(System.console().readLine());
 
-    double media = ((nota1 + nota2) /2);
+    double media = ((nota1 + nota2) / 2);
 
-    if(media < 5){
-        System.out.print("Debes presentarte a la recuperación, dinos cuanto has sacado: ");
-        double recuperacion = Double.parseDouble(System.console().readLine());
-        if(recuperacion < 5){
-            System.out.printf("lo siento, tu nota es %.2f es decir eres no apto\n", media);
-        }
-        else{
-            System.out.println("Felicidades, has aprobado la recuperación. Eres apto\n");
-        }
-    } else{
-        System.out.printf("Felicidades, estás aprobado con un %.2f\n", media);
+    if (media < 5) {
+      System.out.print("Debes presentarte a la recuperación, dinos cuanto has sacado: ");
+      double recuperacion = Double.parseDouble(System.console().readLine());
+      if (recuperacion < 5) {
+        System.out.printf("lo siento, tu nota es %.2f es decir eres no apto\n", media);
+      } else {
+        System.out.println("Felicidades, has aprobado la recuperación. Eres apto\n");
+      }
+    } else {
+      System.out.printf("Felicidades, estás aprobado con un %.2f\n", media);
     }
   }
 }
