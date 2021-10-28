@@ -2,7 +2,7 @@
  * Calcula el precio funal de un producto
  * 
  * 
- * @author Ale Cueto, Natalia Castillo
+ * @author Ale Cueto
  */
 public class Tema04Ejercicio23AleCueto {
   public static void main(String[] args) {
