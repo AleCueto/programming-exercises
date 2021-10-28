@@ -6,8 +6,8 @@
  */
 public class Tema04Ejercicio20AleCueto {
   public static void main(String[] args) {
-    System.out.println("¡Vamos a ver si un número es capicúo!");
-    System.out.print("Introduce el número del que deseas comprobar si es capicúo, debe ser entero y positivo: ");
+    System.out.println("¡Vamos a ver si un número es capicúa!");
+    System.out.print("Introduce el número del que deseas comprobar si es capicúa, debe ser entero y positivo: ");
     
     double numero = Double.parseDouble(System.console().readLine());
 
@@ -19,37 +19,41 @@ public class Tema04Ejercicio20AleCueto {
 
 
 
-    boolean capicuo = false;
+    boolean capicua = false;
 
+
+    if((int)numero % 10 > 0){
+      capicua = true;
+    }
 
     if((int)numero / 10 % 10 > 0){
       if(decena == unidad){
-        capicuo = true;
+        capicua = true;
       }
     }
 
     if((int)numero / 100 % 10 > 0){
       if(centena == unidad){
-        capicuo = true;
+        capicua = true;
       }
     }
 
     if((int)numero / 1000 % 10 > 0){
       if(millar == unidad && decena == centena){
-        capicuo = true;
+        capicua = true;
       }
     }
 
     if((int)numero / 10000 % 10 > 0){
       if(decenaMillar == unidad && millar == decena){
-        capicuo = true;
+        capicua = true;
       }
     }
 
-    if(capicuo == true){
-      System.out.println("El número " + (int)numero + " es capicúo");
+    if(capicua == true){
+      System.out.println("El número " + (int)numero + " es capicúa");
     } else{
-      System.out.println("El numero " + (int)numero + " no es capicúo");
+      System.out.println("El numero " + (int)numero + " no es capicúa");
     }
 
   }
