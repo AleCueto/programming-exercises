@@ -7,7 +7,7 @@
 public class Tema04Ejercicio22AleCueto {
   public static void main(String[] args) {
 
-    System.out.println("_Calcular los minutos hasta el fin de semana");
+    System.out.println("Calcular los minutos hasta el fin de semana");
     System.out.print("Indica el número de un día de laborable (1-5): ");
     int dia = Integer.parseInt(System.console().readLine());
     System.out.print("Indica la hora: ");
@@ -34,10 +34,10 @@ public class Tema04Ejercicio22AleCueto {
             diasHastaV = 0;
     }
 
-    horasHastaV = diasHastaV * 24 - (horas + 15);
-    minutosHastaV = horasHastaV * 60 + 60 - minutos;
+    horasHastaV = diasHastaV * 24 - 1 + 15;
+    minutosHastaV = horasHastaV * 60 + (60 - minutos);
     
-    System.out.println("quedan "+ horasHastaV + " horas y " + minutosHastaV + " minutos");
+    System.out.println("¡Quedan " + minutosHastaV + " minutos hasta el viernes a las 15:00h!");
     
   }
 }
