@@ -22,14 +22,12 @@ public class Tema04Ejercicio20AleCueto {
     boolean capicua = false;
 
 
-    if((int)numero % 10 > 0){
-      capicua = true;
-    }
-
     if((int)numero / 10 % 10 > 0){
       if(decena == unidad){
         capicua = true;
       }
+    } else {
+      capicua = true;
     }
 
     if((int)numero / 100 % 10 > 0){
