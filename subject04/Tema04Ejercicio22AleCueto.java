@@ -34,7 +34,7 @@ public class Tema04Ejercicio22AleCueto {
             diasHastaV = 0;
     }
 
-    horasHastaV = diasHastaV * 24 - 1 + 15;
+    horasHastaV = diasHastaV * 24 - 1 + 15 - horas;
     minutosHastaV = horasHastaV * 60 + (60 - minutos);
     
     System.out.println("¡Quedan " + minutosHastaV + " minutos hasta el viernes a las 15:00h!");
