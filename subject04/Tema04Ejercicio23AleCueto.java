@@ -7,37 +7,75 @@
 public class Tema04Ejercicio23AleCueto {
   public static void main(String[] args) {
 
-    System.out.println("Calcular los minutos hasta el fin de semana");
-    System.out.print("Indica el número de un día de laborable (1-5): ");
-    int dia = Integer.parseInt(System.console().readLine());
-    System.out.print("Indica la hora: ");
-    int horas = Integer.parseInt(System.console().readLine());
-    System.out.print("Indica los minutos: ");
-    int minutos = Integer.parseInt(System.console().readLine());
-   
-    int diasHastaV = 0, horasHastaV, minutosHastaV;
+    boolean precioValido = true;
 
-    switch(dia){
-        case 1: 
-            diasHastaV = 4;
-            break;
-        case 2: 
-            diasHastaV = 3;
-            break;
-        case 3: 
-            diasHastaV = 2;
-            break;
-        case 4: 
-          diasHastaV = 1;
-            break;
-        case 5:
-            diasHastaV = 0;
+    System.out.println("Vamos a calcular el precio final de un producto: ");
+    System.out.print("Primero dime cuál es la base imponible en euros: ");
+    double baseImp = Double.parseDouble(System.console().readLine());
+
+    System.out.print("\nAhora dime cuál es el IVA, puede ser... ");
+    System.out.println("general: 21% (escribe 1),  reducido: 10% (escribe 2),   o superreducido: 4% (escribe 3)");
+    int iva = Integer.parseInt(System.console().readLine());
+
+    System.out.println("¿Tienes algún código promocional? (s/n): ");
+    String aux = System.console().readLine();
+    String codigo = "";
+
+
+    if(baseImp < 0){
+      precioValido = false;
+    }
+    double precio = baseImp;
+
+    switch (iva) {
+    case 1:
+      precio = precio * 1.21;
+      break;
+
+    case 2:
+      precio = precio * 1.1;
+      break;
+
+    case 3:
+      precio = precio * 1.04;
+      break;
+
+    default:
+      precioValido = false;
     }
 
-    horasHastaV = diasHastaV * 24 - 1 + 15 - horas;
-    minutosHastaV = horasHastaV * 60 + (60 - minutos);
+    if (aux.equals("s")) {
+      System.out.println("Introduce tu código por favor: ");
+      codigo = System.console().readLine();
+
+
+      switch(codigo){
+
+        case "mitad":
+          precio = precio / 2;
+          break;
     
-    System.out.println("¡Quedan " + minutosHastaV + " minutos hasta el viernes a las 15:00h!");
+        case "menos5":
+          precio = precio - 5;
+          break;
     
+        case "5porc":
+          precio -= precio * 0.05;
+          break;
+    
+        default:
+          precioValido = false;
+        break;
+        }
+
+    }
+
+
+    if(precioValido == true){
+      System.out.printf("El precio final es igual a: %.2f€ \n", precio);
+    } else{
+      System.out.println("Hay algún dato mal introducido, por favor, inténtalo de nuevo");
+    }
+
   }
 }
