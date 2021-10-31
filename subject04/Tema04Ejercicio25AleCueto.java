@@ -1,5 +1,3 @@
-import javax.swing.text.StyledEditorKit;
-
 /**
  * Calcula el precio de las banderas que vendemos
  * 
