@@ -1,5 +1,5 @@
 /**
- * Calcula el precio de lunas entradas de cine
+ * Calcula el precio de unas entradas de cine
  * 
  * 
  * @author Ale Cueto
