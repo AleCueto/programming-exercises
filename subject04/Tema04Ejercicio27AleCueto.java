@@ -12,10 +12,10 @@ public class Tema04Ejercicio27AleCueto {
     System.out.print("Elija un sabor (manzana, fresa o chocolate): ");
     String sabor = System.console().readLine();
 
-    System.out.print("\n¿Quiere nata? (s o n): ");
+    System.out.print("\n¿Quieres nata? (s o n): ");
     String nata = System.console().readLine();
 
-    System.out.print("\n¿Quiere ponerle un nombre? (s o n): ");
+    System.out.print("\n¿Quieres ponerle un nombre? (s o n): ");
     String nombre = System.console().readLine();
 
     String chocolate = "";
@@ -54,12 +54,12 @@ public class Tema04Ejercicio27AleCueto {
         System.out.println("Has introducido mal el sabor");
     }
 
-    System.out.printf("\nTarta de %8s %s: %8.2f€", sabor, chocolate, precioSabor);
+    System.out.printf("\nTarta de %s %s: %.2f€", sabor, chocolate, precioSabor);
 
     if(precioSabor > 0 ){
       if(nata.equals("s")){
         precioNata += 2.5;
-        System.out.printf("\nCon nata: %23.2f€", precioNata);
+        System.out.printf("\nCon nata: %.2f€", precioNata);
       } else if (nata.equals("n")){
         precioNata += 0;
       } else {
@@ -68,7 +68,7 @@ public class Tema04Ejercicio27AleCueto {
 
       if(nombre.equals("s")){
         precioNombre += 2.75;
-        System.out.printf("\nCon nombre: %21.2f€", precioNombre);
+        System.out.printf("\nCon nombre: %.2f€", precioNombre);
       } else if (nombre.equals("n")){
         precioNombre += 0;
       } else {
@@ -77,7 +77,7 @@ public class Tema04Ejercicio27AleCueto {
 
       double precioTotal = precioSabor + precioNata + precioNombre;
 
-      System.out.printf("\nTotal: %27.2f€", precioTotal);
+      System.out.printf("\nTotal: %.2f€\n", precioTotal);
     }
   }
 }
