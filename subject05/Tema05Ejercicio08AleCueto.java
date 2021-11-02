@@ -6,13 +6,18 @@
  */
 public class Tema05Ejercicio08AleCueto {
   public static void main(String[] args) {
-    System.out.println("¡Dime un número y yo te daré su tabla de multiplicar!\n");
+    System.out.print("\n¡Dime un número entero y te daré su número de dígitos!: ");
     
-    double aux = Double.parseDouble(System.console().readLine());
-    int numero = (int)aux;
+    Long numero = Long.parseLong(System.console().readLine());
+    long digitos = 0;
 
-    for(int i = 0; i <= 10; i++){
-      System.out.println("" + i + " * " + numero + " = " + i*numero);
+
+    while(numero > 1){
+      numero = numero/10;
+      digitos++; 
     }
+    
+    System.out.println("\nEl número introducido tiene " + digitos + " dígitos");
+
   }
 }
