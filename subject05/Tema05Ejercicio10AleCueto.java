@@ -11,14 +11,20 @@ public class Tema05Ejercicio10AleCueto {
     Double media = 0.0;
 
     System.out.println("¡Vamos a hacer una media que se vaya actualizando!");
-    int i = 1;
+    System.out.println("Se dejarán de añadir números cuando introduzcas un negativo");
+    int i = -1;
 
-    while(numero >= 0){
+    do{
       System.out.print("\n¡Añáde un nuevo número a la media!: ");
       numero = Double.parseDouble(System.console().readLine());
-      media = (media + numero) / i;
+      if(numero >= 0){
+        media += numero;
+      }
       i++;
-      System.out.println("La media es " + media);
-    }
+    }while(numero >= 0);
+
+
+    media = media/i;
+    System.out.println("La media es igual a " + media);
   }
 }
