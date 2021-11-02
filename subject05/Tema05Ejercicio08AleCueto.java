@@ -1,5 +1,5 @@
 /**
- * ¡Muestra tabla de multiplicar de un número!
+ * ¡Muestro el número de dígitos!
  * 
  * 
  * @author Ale Cueto
