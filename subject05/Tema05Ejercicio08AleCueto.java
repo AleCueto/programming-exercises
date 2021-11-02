@@ -1,23 +1,19 @@
 /**
- * ¡Muestro el número de dígitos!
+ * ¡Muestro tabla de multiplicar!
  * 
  * 
  * @author Ale Cueto
  */
 public class Tema05Ejercicio08AleCueto {
   public static void main(String[] args) {
-    System.out.print("\n¡Dime un número entero y te daré su número de dígitos!: ");
+    System.out.print("\n¡Dime un número y te daré su tabla de multiplicar!: ");
     
-    Long numero = Long.parseLong(System.console().readLine());
-    long digitos = 0;
+    double aux = Double.parseDouble(System.console().readLine());
+    int numero = (int) aux;
 
-
-    while(numero > 1){
-      numero = numero/10;
-      digitos++; 
+    for(int i = 0; i <= 10; i++){
+      System.out.println( numero + " * " + i + " = " + numero * i);
     }
-    
-    System.out.println("\nEl número introducido tiene " + digitos + " dígitos");
 
   }
 }
