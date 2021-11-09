@@ -11,8 +11,9 @@ public class Tema05Ejercicio01AleCueto {
     
     for(int i  = 0; i <= 100; i++){
     
-      if(i % 5 == 0)
+      if(i % 5 == 0){
         System.out.println(i + " es múltiplo de 5");
+      }
     }
   }
 }
