@@ -26,7 +26,7 @@ public class Tema05Ejercicio17AleCueto {
 
     for(long i = 0; i <= 100; i++){
       System.out.println(numero + " + " + ultimoResultado + " = " + resultado);
-      numero+=2;
+      numero++;
       ultimoResultado = resultado;
       resultado = ultimoResultado + numero;
     }
