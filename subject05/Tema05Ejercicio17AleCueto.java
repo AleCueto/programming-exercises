@@ -1,5 +1,3 @@
-import javax.naming.spi.DirStateFactory.Result;
-
 /**
  * ¡Suma los 100 números siguientes a un número entero y positivo introducido!
  * 
