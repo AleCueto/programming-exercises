@@ -1,5 +1,3 @@
-import java.security.Principal;
-
 /**
  * ¡vamos a mostrar de 7 en 7 los numeros entre dos enteros!
  * 
