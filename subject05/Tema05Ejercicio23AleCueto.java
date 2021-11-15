@@ -1,5 +1,3 @@
-import javax.print.attribute.standard.Media;
-
 /**
  * ¡Introduce números hasta que sume 10000 y calculamos con eso!
  * 
