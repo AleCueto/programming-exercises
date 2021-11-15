@@ -1,5 +1,3 @@
-import java.security.cert.TrustAnchor;
-
 /**
  * ¡vamos a mostrar todos los primos entre 2 y 100!
  * 
