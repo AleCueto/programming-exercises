@@ -1,5 +1,3 @@
-import java.util.EmptyStackException;
-
 /**
  * ¡vamos a pintar una pirámide con altura determinada por teclado!
  * 
