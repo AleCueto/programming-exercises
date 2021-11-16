@@ -1,5 +1,5 @@
 /**
- * ¡Introduce números hasta que sume 10000 y calculamos con eso!
+ * ¡Pirámide con números!
  * 
  * 
  * @author Ale Cueto
@@ -12,7 +12,7 @@ public class Tema05Ejercicio24AleCueto {
     System.out.println("¡vamos a pintar una pirámide con n carácter con altura determinada por teclado!");
 
     
-    System.out.print("Ahora dime la altura que quieres que rodee la pirámide: ");
+    System.out.print("Ahora dime la altura de la pirámide: ");
     long altura = Long.parseLong(System.console().readLine());
     
     System.out.println("\n");
