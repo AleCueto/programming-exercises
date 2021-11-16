@@ -6,7 +6,9 @@
  */
 public class Tema05Ejercicio24AleCueto {
   public static void main(String[] args) {
-     
+
+    Boolean resta = false;
+
     System.out.println("¡vamos a pintar una pirámide con n carácter con altura determinada por teclado!");
 
     
@@ -18,24 +20,40 @@ public class Tema05Ejercicio24AleCueto {
     int caracter = 0;
     
     for(int i = 0; i < altura; i++){
+      resta = false;
+      
+      int contadora = 0;
+
+      // pinta n espacios
       for(int n = 0; n < espacios - i; n++){
         System.out.print(" ");
+        contadora ++;
       }
 
       caracter = 0;
 
+      //pinta caracteres
       for(int x = 0; x <= i * 2; x++){
-        if(caracter >= x){
+        if(contadora >= altura){
+          resta = true;
+        } 
+        
+        if (resta == false){
           caracter++;
-        } else if(caracter < x){
+        } else if (resta == true){
           caracter--;
         }
         System.out.print(caracter);
+        contadora++;
       }
+      resta = false;
+      //pinta n espacios
       for(int n = 0; n < espacios - i; n++){
         System.out.print(" ");
+        contadora ++;
       }
       System.out.print("\n");
+      contadora = 0;
     }
   }
 }   
