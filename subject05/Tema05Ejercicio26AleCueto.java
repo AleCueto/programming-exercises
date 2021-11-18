@@ -1,5 +1,3 @@
-import javax.swing.text.Position;
-
 /**
  * ¡Pide un número y un dígito y te dice la posición o posiciones que ocupa!
  * 
