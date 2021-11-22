@@ -11,7 +11,6 @@ public class Tema05Ejercicio33AleCueto {
 
     System.out.print("\nIntroduce la altura: ");
     int altura = Integer.parseInt(System.console().readLine());
-    int ancho = altura -2;
     int espacio = 0;
     int distanciaEntrePuntos = altura;
     
