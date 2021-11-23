@@ -7,16 +7,13 @@
 public class Tema05Ejercicio34AleCueto {
   public static void main(String[] args) {
 
-    System.out.print("¡Dame dos números y te daré todos los pares y todos los impares de ambos!: ");
+    System.out.print("¡Dame un número y te daré todos los pares y todos los impares!: ");
 
-    System.out.print("\nDime el primer número: ");
+    System.out.print("\nDime el número: ");
     int numero = Integer.parseInt(System.console().readLine());
     
     int volteado = 0;
     int volteadoAux = 0;
-
-    int sumaPar = 0;
-    int sumaImpar = 0;
 
     while(numero > 0){
       volteado = (volteado*10) + (numero%10);
@@ -30,7 +27,6 @@ public class Tema05Ejercicio34AleCueto {
     while(volteadoAux > 0){
       if((volteadoAux%10) % 2 == 0){
         System.out.print(volteadoAux%10 + " ");
-        sumaPar += volteadoAux%10;
       }
       volteadoAux /= 10;
     }
@@ -42,7 +38,6 @@ public class Tema05Ejercicio34AleCueto {
     while(volteadoAux > 0){
       if((volteadoAux%10) % 2 != 0){
         System.out.print(volteadoAux%10 + " ");
-        sumaPar += volteadoAux%10;
       }
       volteadoAux /= 10;
     }
