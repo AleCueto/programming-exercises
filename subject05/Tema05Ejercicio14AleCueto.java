@@ -20,8 +20,12 @@ public class Tema05Ejercicio14AleCueto {
 
     int exponente = (int)aux;
 
-    for(int i = 1; i < exponente; i++){
-      resultado = resultado * base;
+    if(exponente == 0){
+      resultado = 1;
+    } else{
+      for(int i = 1; i < exponente; i++){
+        resultado = resultado * base;
+      }
     }
 
     System.out.println("\n" + base + " elevado a " + exponente + " = " + resultado + "\n");
