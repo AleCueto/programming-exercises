@@ -18,7 +18,7 @@ public class Tema05Ejercicio35AleCueto {
     //Pinta X
     espacio = 3;
     distanciaEntrePuntos = altura;
-   Boolean chocan = false;
+    Boolean chocan = false;
      //Dos puntos
      for(int h = 0; h <= altura -2; h++){
      if(distanciaEntrePuntos != 0 && chocan == false){
