@@ -25,9 +25,6 @@ public class Tema05Ejercicio19AleCueto {
       for(int x = 0; x <= i * 2; x++){
         System.out.print(caracter);
       }
-      for(int n = 0; n < espacios - i; n++){
-        System.out.print(" ");
-      }
       System.out.print("\n");
     }
   }
