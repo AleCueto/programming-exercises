@@ -30,7 +30,8 @@ public class Tema05Ejercicio32AleCueto {
         suma += volteado%10;
       }
     }
+
     System.out.println("\n");
-    System.out.println("Hay" + pares + "numeros pares y en total suman " + suma);
+    System.out.println("Hay " + pares + " numeros pares y en total suman " + suma);
   }
 }   
