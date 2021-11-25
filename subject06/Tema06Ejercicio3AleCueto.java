@@ -4,21 +4,21 @@
  * 
  * @author Ale Cueto
  */
-public class Tema06Ejercicio2AleCueto {
+public class Tema06Ejercicio3AleCueto {
   public static void main(String[] args) {
 
-    System.out.print("¡Muestra al azar el nombre de una numeroCarta de la baraja francesa!: ");
+    System.out.print("¡Muestra al azar el nombre de una numeroCarta de la baraja española!: ");
     int numeroCarta = 0;
     int paloCarta = 0;
 
 
-      numeroCarta = (int)(Math.random()*13) + 1;
-
+      numeroCarta = (int)(Math.random()*10) + 1;
+      
       switch(numeroCarta){
         case 1:
         System.out.print("As");
         break;
-  
+        
         case 2:
         System.out.print("dos");
         break;
@@ -56,15 +56,15 @@ public class Tema06Ejercicio2AleCueto {
         break;
 
         case 11:
-        System.out.print("Jack");
+        System.out.print("Sota");
         break;
         
         case 12:
-        System.out.print("Queen");
+        System.out.print("Caballo");
         break;
         
         case 13:
-        System.out.print("King");
+        System.out.print("Rey");
         break;
       }
       
@@ -74,16 +74,16 @@ public class Tema06Ejercicio2AleCueto {
 
       switch(paloCarta){
         case 1:
-        System.out.print("picas");
+        System.out.print("oro");
         break;
         case 2:
-        System.out.print("corazones");
+        System.out.print("espadas");
         break;
         case 3:
-        System.out.print("diamantes");
+        System.out.print("bastos");
         break;
         case 4:
-        System.out.print("tréboles");
+        System.out.print("copas");
         break;
       }
 
