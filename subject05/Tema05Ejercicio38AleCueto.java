@@ -1,5 +1,5 @@
 /**
- * ¡Pinta reloj de arena!
+ * ¡Pide un número entero positivo y muestra los factoriales hasta él!
  * 
  * 
  * @author Ale Cueto
@@ -10,55 +10,42 @@ public class Tema05Ejercicio38AleCueto {
     System.out.print("¡Vamos a pintar un reloj de arena con la altura que quieras!: ");
     System.out.print("Por favor, introduce la altura: ");
     int h = Integer.parseInt(System.console().readLine());
-    int asteriscs = h;
     int espacios = 0;
-    
-    //Parte de arriba
-    for (int i = 0; i < h; i++) {
+    int altura = h;
 
-      //Pinta espacios delante
-      for(int e = 0; e <= espacios; e++){
-        System.out.print(" ");
-      }
-
-
-      //Pinta asteriscos
-      for (int j = 0; j < asteriscs * 2; j++) {
-        System.out.print("*");
-      }
-
-      //Pinta espacios detrás
-      for(int e = 0; e <= espacios; e++){
-        System.out.print(" ");
-      }
-
-      System.out.print("\n");
-      asteriscs--;
+    //Pinta parte de arriba
+    for (int i = 0; i < h/2+1 ; i++) {
+      //pintar espacios antes
+      pintarEspacios(espacios);
       espacios++;
+      pintarCaracteres(altura, '*');
+      System.out.println();
+      altura-= 2;
     }
 
-    
-    asteriscs = 2;
-    espacios = h;
-    
-    //Parte abajo
-    for (int i = 0; i < h; i++) {
-      
-      //Pinta espacios por delante
-      for (int e = espacios; e >= 1; e--) {
-        System.out.print(" ");
-      }
+    espacios-=2;
+    altura+= 4;
 
-      //Pinta asteriscos
-      for (int j = 0; j < asteriscs; j++) {
-        System.out.print("*");
-      }
-      asteriscs+=2;
-      
 
+    for (int i = 0; i < h/2; i++) {
+      //pintar espacios antes
+      pintarEspacios(espacios);
       espacios--;
+      pintarCaracteres(altura, '*');
+      altura+= 2;
       System.out.println();
     }
-
+    }
+  
+    public static void pintarEspacios(int numeroEspacios){
+      for (int i = 0; i < numeroEspacios; i++) {
+        System.out.print(" ");
+      }
+    }
+  
+    public static void pintarCaracteres(int numeroCaracteres, char caracter){
+      for (int i = 0; i < numeroCaracteres; i++) {
+        System.out.print("" + caracter);
+      }
     }
   }   
