@@ -20,17 +20,26 @@ public class Tema05Ejercicio44AleCueto {
     long primeraMitad = 0;
     long segundaMitad = 0;
 
-    for (int i = 0; i < digito -1; i++) {
+    for (int i = 0; i < ( DigitosNumero(numero) - digito); i++) {
       divisor *= 10;
     }
 
-
-
-    primeraMitad = numero/divisor;
+    primeraMitad = numero / divisor;
 
     segundaMitad = numero - primeraMitad * divisor;
 
-    System.out.println("" + primeraMitad + introducido + segundaMitad);
+    System.out.println("El número final es " + primeraMitad + introducido + segundaMitad);
 
+  }
+
+  public static int DigitosNumero(long numero) {
+    int digitos = 0;
+
+    while (numero > 0) {
+      digitos++;
+      numero = numero / 10;
+    }
+
+    return digitos;
   }
 }
