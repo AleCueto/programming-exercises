@@ -24,4 +24,6 @@ public class Tema05Ejercicio39AleCueto {
     System.out.print(factorial + "\n");
 
   }
+
+  
 }   
