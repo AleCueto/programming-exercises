@@ -26,6 +26,7 @@ public class Tema06Ejercicio17AleCueto {
     //Pinta en medio
     for (int i = 0; i < alto-2; i++) {
       System.out.print("*");
+
       for (int j = 0; j < ancho-2; j++) {
         if(posicion != posicionPez){
           System.out.print(" ");
@@ -34,6 +35,7 @@ public class Tema06Ejercicio17AleCueto {
         }
         posicion++;
       }
+      
       System.out.print("*");
       System.out.println();
     }
