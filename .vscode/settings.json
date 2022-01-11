@@ -1,6 +1,7 @@
 {
   "java.project.sourcePaths": [
+    "subject07",
     "subject06",
-    "subject07"
+    "subject08"
   ]
 }

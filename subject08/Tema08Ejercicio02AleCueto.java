@@ -15,7 +15,7 @@ public class Tema08Ejercicio02AleCueto {
 
     for (int i = 0; i < array.length; i++) {
       for (int j = 0; j < array[0].length; j++) {
-        System.out.print("Introduce el número de la fila " + i + " y la columna " + j);
+        System.out.print("Introduce el número de la fila " + i + " y la columna " + j + ": ");
         array[i][j] = Integer.parseInt(System.console().readLine());
       }
     }
@@ -31,8 +31,8 @@ public class Tema08Ejercicio02AleCueto {
       System.out.println();
     }
 
-    for (int i = 0; i < array.length; i++) {
-      System.out.print(sumaColumna[i] + " ");
+    for (int i = 0; i < array.length -1; i++) {
+      System.out.print(sumaColumna[i] + "  ");
     }
   }
 }
