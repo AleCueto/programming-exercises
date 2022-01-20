@@ -11,19 +11,20 @@ public class Tema08Ejercicio10AleCueto {
 
     boolean correcto = false;
 
-    for (int i = 0; i < tablero.length; i++) {
-      for (int j = 0; j < tablero[0].length; j++) {
-        System.out.print(0);
-      }
-      System.out.println();
-    }
 
     boolean fin = false;
     while(!fin){
     
     for (int i = 0; i < 9; i++) {
       
-      
+        
+      for (int x = 0; x < tablero.length; x++) {
+        for (int j = 0; j < tablero[0].length; j++) {
+          System.out.print(tablero[x][j]);
+        }
+        System.out.println();
+      }
+
       System.out.println("--JUGADOR 1. Elija posición:--");
       System.out.print("x: ");
       
@@ -62,14 +63,6 @@ public class Tema08Ejercicio10AleCueto {
           }
         }
         
-        
-        
-        for (int y = 0; y < tablero.length; y++) {
-          for (int j = 0; j < tablero[0].length; j++) {
-            System.out.print(tablero[y][j]);
-          }
-          System.out.println();
-        }
         
         
         for (int y = 0; y < tablero.length; y++) { 
