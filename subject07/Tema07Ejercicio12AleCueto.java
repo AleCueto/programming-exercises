@@ -19,11 +19,11 @@ public class Tema07Ejercicio12AleCueto {
     System.out.println();
 
     System.out.println("Ahora dime la posición inicial (0 a 9)");
-    int inicial = Integer.parseInt(System.console().readLine());
-    int valorInicial = numeros[inicial];
+    //int inicial = Integer.parseInt(System.console().readLine());
+    //int valorInicial = numeros[inicial];
 
     System.out.println("Ahora dime la posición final (0 a 10)");
-    int ultimo = Integer.parseInt(System.console().readLine());
+    //int ultimo = Integer.parseInt(System.console().readLine());
     
     numerosModificados[9] = numeros[0];
 
