@@ -1,7 +1,9 @@
 {
   "java.project.sourcePaths": [
+    "subject09/misFunciones",
+    "subject08",
     "subject07",
     "subject06",
-    "subject08"
+    "subject09"
   ]
 }
