@@ -11,8 +11,8 @@ public class ejercicioBorde {
 
     int[][] array = new int[5][4]; // x y
 
-    // bordeHomogeneo(array);
-    noBordeHomogeneo(array);
+    //bordeHomogeneo(array);
+    // noBordeHomogeneo(array);
     muestraArray(array);
 
     System.out.println(tieneBordeHomogeneo(array));
