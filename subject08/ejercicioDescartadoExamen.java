@@ -7,7 +7,11 @@
 public class ejercicioDescartadoExamen {
   public static void main(String[] args) throws InterruptedException{
 
-    int[][] array = new int[4][4];
+    System.out.println("Largo array: ");
+    int longitud = Integer.parseInt(System.console().readLine()); 
+
+
+    int[][] array = new int[longitud][longitud];
 
     rellenaArray(array);
 
@@ -60,7 +64,7 @@ public class ejercicioDescartadoExamen {
 
 
           if(posx== limiteIzquierda && posy == limiteArriba){
-            if(limiteArriba != 0 && limiteIzquierda == aux){
+            if(limiteArriba != 0 && limiteIzquierda == aux && aux != limiteArriba){
               direccion = "derecha";
               limiteIzquierda++;
             }
