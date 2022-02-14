@@ -17,7 +17,7 @@ public class ejercicioDescartadoExamen {
 
     for (int i = 0; i < array.length; i++) {
       for (int j = 0; j < array[0].length; j++) {
-        System.out.printf("%2d ",array[j][i]);
+        System.out.printf("%3d ",array[j][i]);
       }
       System.out.println();
     }
